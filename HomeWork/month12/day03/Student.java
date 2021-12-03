@@ -9,5 +9,19 @@ package month12.day03;
  * @since JDK 1.8
  */
 public class Student {
-    private int name;
+    private String name;
+    private int age;
+
+    public Student(){
+    }
+    private Student(String name){
+        this.name=name;
+    }
+    private Student(int age){
+        this.age = age;
+    }
+    Student(String name, int age){
+        this.name=name;
+        this.age = age;
+    }
 }

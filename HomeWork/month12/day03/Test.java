@@ -1,6 +1,10 @@
 package month12.day03;
 
+import com.sun.org.apache.bcel.internal.Const;
 import lombok.SneakyThrows;
+
+import java.lang.reflect.Constructor;
+import java.util.Arrays;
 
 /**
  * ClassName: Test
@@ -15,5 +19,8 @@ public class Test {
     public static void main(String[] args){
         Class<?> clazz = Class.forName("month12.day03.Student");
         System.out.println(clazz);
+
+        Constructor<?>[] constructor = clazz.getDeclaredConstructors();
+        System.out.println(Arrays.toString(constructor));
     }
 }
